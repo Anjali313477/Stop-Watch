@@ -10,11 +10,13 @@ let ID;
 
 startbutton.addEventListener('click', (event) => {
   ID = setInterval(start, 1000)
+  startbutton.disabled = true;
 })
 
 stopbutton.addEventListener('click', (event) => {
   clearInterval(ID)
-});
+  startbutton.disabled=false;
+})
 
 resetbutton.addEventListener('click', (event) => {
   clearInterval(ID);
@@ -22,6 +24,7 @@ resetbutton.addEventListener('click', (event) => {
   hrs = 0;
   min = 0;
   sec = 0;
+  startbutton.disabled=false;
 })
 
 function start() {

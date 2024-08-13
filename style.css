@@ -15,8 +15,9 @@ body {
 }
 
 .time {
-    font-size: 55px;
+    font-size: 57px;
     font-weight: 600;
+
 }
 
 .btn {
@@ -31,11 +32,27 @@ body {
     border-radius: 2px;
 }
 
-.timearea p{
-    /* border: 1px solid red; */
+.timearea p {
     font-weight: bold;
     padding-inline: 10px;
 }
-.timearea{
-    display: flex; 
+
+.timearea {
+    display: flex;
+}
+
+
+
+/* media-queary */
+@media screen and (max-width:400px){
+    .time {
+        font-size: 50px;
+        font-weight:400;
+    
+    } 
+    
+    .timearea p {
+        font-weight: bold;
+        padding-inline: 6px;
+    }
 }
